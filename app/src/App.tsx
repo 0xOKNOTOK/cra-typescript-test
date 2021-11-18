@@ -1,10 +1,14 @@
 import React from 'react';
 import './App.css';
-import { TextBox } from './components/TextBox';
+import { ArticleInfo } from './components/ArticleInfo';
+import { Header } from './components/Header';
+
+
 
 const App: React.FC = () => {
-  return <div>Yo
-    <TextBox text='hello' person={{firstName: '', lastName: ''}}/>
+  return <div>
+    <Header title={'Using typescript with React!'} username={'User'}/>
+    <ArticleInfo author="rossgr" id={22} staff={true} />
   </div>
 }
 
